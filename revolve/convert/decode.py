@@ -123,18 +123,29 @@ class NeuralNetworkDecoder(object):
             err("Robot body required for standard Neural Network decode.")
 
         # Prepare all automatic input / output neurons
-        self._process_body_part(obj['body'])
+        #self._process_body_part(obj['body'])
 
         brain = obj.get('brain', {})
         neurons = brain.get('neurons', [])
         params = brain.get('params', {})
         connections = brain.get('connections', [])
 
-        self._create_hidden_neurons(neurons)
+       # self._create_hidden_neurons(neurons)
+
+        # creates all nodes: input/hidden/output
+        self._create_neurons(neurons,params)
+
+        print("----------------ini------")
+        for cu in self.neurons:
+            print(cu)
+            for c in self.neurons[cu]:
+                print(c)
+                print(self.neurons[cu][c])
+        print("----------------fim------")
 
         # Process given parameters
-        for neuron_id in params:
-            self._process_neuron_params(neuron_id, params[neuron_id])
+        #for neuron_id in params:
+         #   self._process_neuron_params(neuron_id, params[neuron_id])
 
         nn = NeuralNetwork()
         self._process_neurons(nn)
@@ -220,6 +231,31 @@ class NeuralNetworkDecoder(object):
                 self.neurons[neuron_id]["part_id"] = neurons[neuron_id]["part_id"]
 
             self._process_neuron_params(neuron_id, neurons[neuron_id])
+
+
+    def _create_neurons(self, neurons, params):
+        """
+        Creates hidden neurons.
+         #update:karinemiras
+        :return:
+        """
+        for neuron_id in neurons:
+            if neuron_id in self.neurons:
+                err("Duplicate neuron ID '%s'" % neuron_id)
+
+            # This sets the defaults, the accurate values - if present - will
+            # be set by `_process_neuron_params`.
+            self.neurons[neuron_id] = {
+                "layer": neurons[neuron_id]['layer'],
+                "type": neurons[neuron_id]['type'],
+                "part_id": neurons[neuron_id]['part_id']
+            }
+
+            self.neurons[neuron_id]["params"] = []
+            if(neurons[neuron_id]['layer'] != "input"):
+                for p in params[neuron_id]:
+                    self.neurons[neuron_id]["params"].append(params[neuron_id][p])
+
 
     def _create_neuron_connections(self, connections, brain):
         """
