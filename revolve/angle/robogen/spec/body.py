@@ -64,50 +64,6 @@ def get_body_spec(conf):
         )
     }
 
-    if conf.enable_wheel_parts:
-        parts.update({
-            "Wheel": PartSpec(
-                body_part=Wheel,
-                arity=1,
-                params=color_params + [
-                    ParamSpec("radius", min_value=40, max_value=80, default=60, epsilon=conf.body_mutation_epsilon)
-                ]
-            ),
-            "ActiveWheel": PartSpec(
-                body_part=ActiveWheel,
-                arity=1,
-                outputs=1,
-                params=color_params + [
-                    ParamSpec("radius", min_value=40, max_value=80, default=60, epsilon=conf.body_mutation_epsilon)
-                ]
-            ),
-            "Cardan": PartSpec(
-                body_part=Cardan,
-                arity=2,
-                params=color_params
-            ),
-            "ActiveCardan": PartSpec(
-                body_part=ActiveCardan,
-                arity=2,
-                outputs=2,
-                params=color_params
-            ),
-            "ActiveRotator": PartSpec(
-                body_part=ActiveRotator,
-                arity=2,
-                outputs=1,
-                params=color_params
-            ),
-            "ActiveWheg": PartSpec(
-                body_part=ActiveWheg,
-                arity=2,
-                outputs=1,
-                params=color_params + [
-                    ParamSpec("radius", min_value=40, max_value=80, default=60, epsilon=conf.body_mutation_epsilon)
-                ]
-            )
-        })
-
     if not conf.disable_sensors:
         if conf.enable_touch_sensor:
             parts['TouchSensor'] = PartSpec(
