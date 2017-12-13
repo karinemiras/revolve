@@ -135,7 +135,7 @@ class NeuralNetworkDecoder(object):
         # creates all nodes: input/hidden/output
         self._create_neurons(neurons,params)
 
-        print("----------------ini------")
+        print("----------------ini-------")
         for cu in self.neurons:
             print(cu)
             for c in self.neurons[cu]:
