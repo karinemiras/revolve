@@ -38,11 +38,11 @@
 // for the Arduino, but I upped them both to 20 to accomodate other
 // scenarios. Should really be enforced in the Python code, this
 // implementation should not be the limit.
-#define MAX_INPUT_NEURONS 20
-#define MAX_OUTPUT_NEURONS 20
+#define MAX_INPUT_NEURONS 100
+#define MAX_OUTPUT_NEURONS 100
 
 // Arbitrary value
-#define MAX_HIDDEN_NEURONS 30
+#define MAX_HIDDEN_NEURONS 100
 
 // Convenience
 #define MAX_NON_INPUT_NEURONS (MAX_HIDDEN_NEURONS + MAX_OUTPUT_NEURONS)

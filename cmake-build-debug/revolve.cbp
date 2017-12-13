@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="revolve"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cpp\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\gazebo\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\sdformat\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\ignition-math2\;CMake Files\..\..\..\..\..\usr\local\Cellar\;CMake Files\..\..\..\..\..\usr\local\Cellar\ogre\;CMake Files\..\..\..\..\..\usr\local\Cellar\ogre\1.7.4_4\;CMake Files\..\..\..\..\..\usr\local\Cellar\ogre\1.7.4_4\CMake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="revolve-spec">
+				<Option output="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/librevolve-spec.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-DSOURCE_DIR=/Users/karinemiras/projects/coevolution-revolve/revolve"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/gazebo-6.5"/>
+					<Add directory="/usr/local/Cellar/sdformat3/3.7.0_5/include/sdformat-3.7"/>
+					<Add directory="/usr/local/Cellar/ignition-math2/2.8.0/include/ignition/math2"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE/Terrain"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE/Paging"/>
+					<Add directory="/Users/karinemiras/projects/coevolution-revolve/revolve"/>
+					<Add directory="/usr/local/include/gazebo-6.5/gazebo/msgs"/>
+					<Add directory="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 revolve-spec"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="revolve-spec/fast">
+				<Option output="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/librevolve-spec.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-DSOURCE_DIR=/Users/karinemiras/projects/coevolution-revolve/revolve"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/gazebo-6.5"/>
+					<Add directory="/usr/local/Cellar/sdformat3/3.7.0_5/include/sdformat-3.7"/>
+					<Add directory="/usr/local/Cellar/ignition-math2/2.8.0/include/ignition/math2"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE/Terrain"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE/Paging"/>
+					<Add directory="/Users/karinemiras/projects/coevolution-revolve/revolve"/>
+					<Add directory="/usr/local/include/gazebo-6.5/gazebo/msgs"/>
+					<Add directory="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 revolve-spec/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="revolve-gazebo">
+				<Option output="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/librevolve-gazebo.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-DSOURCE_DIR=/Users/karinemiras/projects/coevolution-revolve/revolve"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/gazebo-6.5"/>
+					<Add directory="/usr/local/Cellar/sdformat3/3.7.0_5/include/sdformat-3.7"/>
+					<Add directory="/usr/local/Cellar/ignition-math2/2.8.0/include/ignition/math2"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE/Terrain"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE/Paging"/>
+					<Add directory="/Users/karinemiras/projects/coevolution-revolve/revolve"/>
+					<Add directory="/usr/local/include/gazebo-6.5/gazebo/msgs"/>
+					<Add directory="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 revolve-gazebo"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="revolve-gazebo/fast">
+				<Option output="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/librevolve-gazebo.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-DSOURCE_DIR=/Users/karinemiras/projects/coevolution-revolve/revolve"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/gazebo-6.5"/>
+					<Add directory="/usr/local/Cellar/sdformat3/3.7.0_5/include/sdformat-3.7"/>
+					<Add directory="/usr/local/Cellar/ignition-math2/2.8.0/include/ignition/math2"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE/Terrain"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE/Paging"/>
+					<Add directory="/Users/karinemiras/projects/coevolution-revolve/revolve"/>
+					<Add directory="/usr/local/include/gazebo-6.5/gazebo/msgs"/>
+					<Add directory="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 revolve-gazebo/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="body-analyzer">
+				<Option output="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/body-analyzer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-DSOURCE_DIR=/Users/karinemiras/projects/coevolution-revolve/revolve"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/gazebo-6.5"/>
+					<Add directory="/usr/local/Cellar/sdformat3/3.7.0_5/include/sdformat-3.7"/>
+					<Add directory="/usr/local/Cellar/ignition-math2/2.8.0/include/ignition/math2"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE/Terrain"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE/Paging"/>
+					<Add directory="/Users/karinemiras/projects/coevolution-revolve/revolve"/>
+					<Add directory="/usr/local/include/gazebo-6.5/gazebo/msgs"/>
+					<Add directory="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 body-analyzer"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="body-analyzer/fast">
+				<Option output="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/body-analyzer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-DSOURCE_DIR=/Users/karinemiras/projects/coevolution-revolve/revolve"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/gazebo-6.5"/>
+					<Add directory="/usr/local/Cellar/sdformat3/3.7.0_5/include/sdformat-3.7"/>
+					<Add directory="/usr/local/Cellar/ignition-math2/2.8.0/include/ignition/math2"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE/Terrain"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE/Paging"/>
+					<Add directory="/Users/karinemiras/projects/coevolution-revolve/revolve"/>
+					<Add directory="/usr/local/include/gazebo-6.5/gazebo/msgs"/>
+					<Add directory="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 body-analyzer/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="revolve-body-analyzer">
+				<Option output="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/librevolve-body-analyzer.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-DSOURCE_DIR=/Users/karinemiras/projects/coevolution-revolve/revolve"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/gazebo-6.5"/>
+					<Add directory="/usr/local/Cellar/sdformat3/3.7.0_5/include/sdformat-3.7"/>
+					<Add directory="/usr/local/Cellar/ignition-math2/2.8.0/include/ignition/math2"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE/Terrain"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE/Paging"/>
+					<Add directory="/Users/karinemiras/projects/coevolution-revolve/revolve"/>
+					<Add directory="/usr/local/include/gazebo-6.5/gazebo/msgs"/>
+					<Add directory="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 revolve-body-analyzer"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="revolve-body-analyzer/fast">
+				<Option output="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/librevolve-body-analyzer.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-DSOURCE_DIR=/Users/karinemiras/projects/coevolution-revolve/revolve"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/gazebo-6.5"/>
+					<Add directory="/usr/local/Cellar/sdformat3/3.7.0_5/include/sdformat-3.7"/>
+					<Add directory="/usr/local/Cellar/ignition-math2/2.8.0/include/ignition/math2"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE/Terrain"/>
+					<Add directory="/usr/local/Cellar/ogre/1.7.4_4/include/OGRE/Paging"/>
+					<Add directory="/Users/karinemiras/projects/coevolution-revolve/revolve"/>
+					<Add directory="/usr/local/include/gazebo-6.5/gazebo/msgs"/>
+					<Add directory="/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 revolve-body-analyzer/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/karinemiras/projects/coevolution-revolve/revolve/cmake-build-debug/cpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/brain/NeuralNetwork.cpp">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/brain/NeuralNetwork.h">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/motors/JointMotor.cpp">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/motors/JointMotor.h">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/motors/Motor.cpp">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/motors/Motor.h">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/motors/MotorFactory.cpp">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/motors/MotorFactory.h">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/motors/PositionMotor.cpp">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/motors/PositionMotor.h">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/motors/VelocityMotor.cpp">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/motors/VelocityMotor.h">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/plugin/BodyAnalyzer.cpp">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/plugin/BodyAnalyzer.h">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/plugin/RobotController.cpp">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/plugin/RobotController.h">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/plugin/WorldController.cpp">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/plugin/WorldController.h">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/plugin/register_analyzer.cpp">
+			<Option target="revolve-body-analyzer"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/sensors/BatterySensor.cpp">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/sensors/BatterySensor.h">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/sensors/ImuSensor.cpp">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/sensors/ImuSensor.h">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/sensors/LightSensor.cpp">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/sensors/LightSensor.h">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/sensors/PointIntensitySensor.cpp">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/sensors/PointIntensitySensor.h">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/sensors/Sensor.cpp">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/sensors/Sensor.h">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/sensors/SensorFactory.cpp">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/sensors/SensorFactory.h">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/sensors/TouchSensor.cpp">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/sensors/TouchSensor.h">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/sensors/VirtualSensor.cpp">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/sensors/VirtualSensor.h">
+			<Option target="revolve-gazebo"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/revolve/gazebo/standalone/body_analyzer_server.cpp">
+			<Option target="body-analyzer"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cpp\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/cpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cpp\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/lib/cmake/gazebo/gazebo-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\gazebo\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/lib/cmake/gazebo/gazebo-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\gazebo\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/lib/cmake/gazebo/gazebo-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\gazebo\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/lib/cmake/gazebo/gazebo-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\gazebo\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/lib/cmake/sdformat/SDFormatConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\sdformat\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/lib/cmake/sdformat/SDFormatConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\sdformat\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/lib/cmake/sdformat/SDFormatConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\sdformat\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/lib/cmake/sdformat/SDFormatConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\sdformat\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/lib/cmake/ignition-math2/ignition-math2-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\ignition-math2\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/lib/cmake/ignition-math2/ignition-math2-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\ignition-math2\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/lib/cmake/ignition-math2/ignition-math2-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\ignition-math2\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/lib/cmake/ignition-math2/ignition-math2-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\ignition-math2\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/lib/cmake/ignition-math2/ignition-math2-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\ignition-math2\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/lib/cmake/ignition-math2/ignition-math2-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\ignition-math2\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/lib/cmake/ignition-math2/ignition-math2-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\ignition-math2\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/lib/cmake/ignition-math2/ignition-math2-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\ignition-math2\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/Cellar/ogre/1.7.4_4/CMake/FindOGRE.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\ogre\1.7.4_4\CMake\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/Cellar/ogre/1.7.4_4/CMake/FindPkgMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\ogre\1.7.4_4\CMake\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/Cellar/ogre/1.7.4_4/CMake/PreprocessorUtils.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\ogre\1.7.4_4\CMake\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/Cellar/ogre/1.7.4_4/CMake/FindOGRE.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\ogre\1.7.4_4\CMake\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/Cellar/ogre/1.7.4_4/CMake/FindPkgMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\ogre\1.7.4_4\CMake\"/>
+		</Unit>
+		<Unit filename="/Users/karinemiras/projects/coevolution-revolve/revolve/../../../../../usr/local/Cellar/ogre/1.7.4_4/CMake/PreprocessorUtils.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\Cellar\ogre\1.7.4_4\CMake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
