@@ -183,9 +183,7 @@ class Node(object):
         # Check if given number of inputs / outputs matches spec
         inputs = sum(1 for n in neurons if n.layer == "input")
         outputs = sum(1 for n in neurons if n.layer == "output")
-        print(part.type)
-        print("inputs exp "+str(self.spec.inputs)+" real "+str(inputs))
-        print("outputs exp "+str(self.spec.outputs)+" real "+str(outputs))
+
         if inputs != self.spec.inputs or outputs != self.spec.outputs:
             raise Exception("Part input / output mismatch.")
 

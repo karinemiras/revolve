@@ -1,9 +1,9 @@
 from collections import deque
 
-from sdfbuilder.math import Vector3
+from sdfbuilder.math import Vector3, Quaternion
 from revolve.util import Time
 import numpy as np
-
+import math
 
 class Robot(object):
     """
@@ -44,6 +44,7 @@ class Robot(object):
         self._ds = deque(maxlen=speed_window)
         self._dt = deque(maxlen=speed_window)
         self._positions = deque(maxlen=speed_window)
+        self._orientations = np.array([[0,0]])
         self._times = deque(maxlen=speed_window)
 
         self._positions.append(position)
@@ -89,6 +90,13 @@ class Robot(object):
         """
         pos = state.pose.position
         position = Vector3(pos.x, pos.y, pos.z)
+
+        rot = state.pose.orientation
+        qua = Quaternion(rot.w, rot.x, rot.y, rot.z)
+        euler = qua.get_rpy()
+        euler = np.array([[euler[0],euler[1]]]) #roll / pitch
+        self._orientations = np.append(self._orientations, euler, 0)
+
 
         if self.starting_time is None:
             self.starting_time = time
@@ -158,6 +166,27 @@ class Robot(object):
             self._positions[-1] - self._positions[0],
             self._times[-1] - self._times[0]
         )
+
+    def head_balance(self):
+
+        roll = 0
+        pitch = 0
+
+        it = len(self._orientations)
+
+        for o in self._orientations:
+
+            roll = roll + abs(o[0])* 180 / math.pi
+            pitch = pitch + abs(o[1])* 180 / math.pi
+
+        #  accumulated angles for each type of rotation
+        #  divided by iterations * maximum angle * each type of rotation
+        balance = (roll + pitch) / (it * 180 * 2)
+
+        balance = 1 - balance # imbalance to balance
+
+        return balance
+
 
     def displacement_velocity(self):
         """
