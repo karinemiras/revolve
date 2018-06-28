@@ -296,7 +296,10 @@ void NeuralNetwork::step(double time) {
       curNeuronActivation += hiddenWeights_[maxNonInputs * j + i] * curState[nOutputs_ + j];
     }
 
+
     unsigned int base = MAX_NEURON_PARAMS * i;
+
+
     switch (types_[i]) {
     case SIGMOID:
       /* params are bias, gain */
@@ -304,12 +307,16 @@ void NeuralNetwork::step(double time) {
       nextState[i] = 1.0
         / (1.0 + exp(-params_[base + 1] *
             curNeuronActivation));
+
+
       break;
     case SIMPLE:
       /* linear, params are bias, gain */
       curNeuronActivation -= params_[base];
       nextState[i] = params_[base + 1] *
           curNeuronActivation;
+
+
       break;
     case OSCILLATOR: { // Use the block to prevent "crosses initialization" error
       /* params are period, phase offset, gain (amplitude) */
@@ -324,6 +331,12 @@ void NeuralNetwork::step(double time) {
       /* set output to be in [0.5 - gain/2, 0.5 + gain/2] */
       nextState[i] = (0.5 - (gain/2.0) +
           nextState[i] * gain);
+
+      // karine changed: add IN connections to oscillators
+
+      nextState[i] = nextState[i] + curNeuronActivation;
+
+
     } break;
     default:
       // Unsupported type should never happen

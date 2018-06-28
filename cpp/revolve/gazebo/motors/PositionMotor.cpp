@@ -72,12 +72,14 @@ void PositionMotor::update(double *outputs, double /*step*/) {
   output += ((2 * gz::math::Rand::GetDblUniform() * noise_) -
             noise_) * output;
 
+
   // Truncate output to [0, 1]
   // HACK Don't actually target the full joint range, this way
   // a low update rate won't mess with the joint constraints as much leading
   // to a more stable system.
   output = fmin(fmax(1e-5, output), 0.99999);
   positionTarget_ = lowerLimit_ + output * (upperLimit_ - lowerLimit_);
+
 
   // Perform the actual motor update
   this->DoUpdate(joint_->GetWorld()->GetSimTime());
