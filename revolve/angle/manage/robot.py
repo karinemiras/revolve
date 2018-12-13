@@ -186,26 +186,18 @@ class Robot(object):
 
         it = len(self._orientations)
 
-        for o in range(0, len(self._orientations)):
+        for o in self._orientations:
 
-            if self._orientations[o][0] < 0:
-                roll = roll + 360 + (self._orientations[o][0] * 180 / math.pi)
-            else:
-                roll = roll + (self._orientations[o][0] * 180 / math.pi)
-
-            if self._orientations[o][1] < 0:
-                pitch = pitch + 360 + (self._orientations[o][1] * 180 / math.pi)
-            else:
-                pitch = pitch + (self._orientations[o][1] * 180 / math.pi)
+            roll = roll + abs(o[0])* 180 / math.pi
+            pitch = pitch + abs(o[1])* 180 / math.pi
 
         #  accumulated angles for each type of rotation
         #  divided by iterations * maximum angle * each type of rotation
-        balance = (roll + pitch) / (it * 360 * 2)
+        balance = (roll + pitch) / (it * 180 * 2)
 
         balance = 1 - balance # imbalance to balance
 
-        # return balance
-        return balance
+
 
 
     def export_positions(self, evaluation_time, robotid, generation, experiment_name):
