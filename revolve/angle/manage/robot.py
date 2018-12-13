@@ -197,6 +197,8 @@ class Robot(object):
 
         balance = 1 - balance # imbalance to balance
 
+        return balance
+
 
 
 
