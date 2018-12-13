@@ -44,16 +44,24 @@ class Robot(object):
         self._ds = deque(maxlen=speed_window)
         self._dt = deque(maxlen=speed_window)
         self._positions = deque(maxlen=speed_window)
-        self._orientations = np.array([[0,0]])
+        self._orientations = deque(maxlen=speed_window)
+        self._seconds =  deque(maxlen=speed_window)
         self._times = deque(maxlen=speed_window)
-
-        self._positions.append(position)
-        self._times.append(time)
 
         self._dist = 0
         self._time = 0
         self._idx = 0
         self._count = 0
+
+        self.second = 1
+        self.count_group = 1
+        self.avg_roll = 0
+        self.avg_pitch = 0
+        self.avg_yaw = 0
+        self.avg_x = 0
+        self.avg_y = 0
+        self.avg_z = 0
+
 
     def write_robot(self, world, details_file, csv_writer):
         """
@@ -94,9 +102,9 @@ class Robot(object):
         rot = state.pose.orientation
         qua = Quaternion(rot.w, rot.x, rot.y, rot.z)
         euler = qua.get_rpy()
-        euler = np.array([[euler[0],euler[1]]]) #roll / pitch
-        self._orientations = np.append(self._orientations, euler, 0)
+        euler = np.array([euler[0],euler[1],euler[2]]) # roll / pitch / yaw
 
+        age = world.age()
 
         if self.starting_time is None:
             self.starting_time = time
@@ -142,6 +150,9 @@ class Robot(object):
         self._times.append(time)
         self._ds.append(ds)
         self._dt.append(dt)
+        self._orientations.append(euler)
+        self._seconds.append(age.sec)
+
 
     def velocity(self):
         """
@@ -167,6 +178,7 @@ class Robot(object):
             self._times[-1] - self._times[0]
         )
 
+
     def head_balance(self):
 
         roll = 0
@@ -174,10 +186,10 @@ class Robot(object):
 
         it = len(self._orientations)
 
-        for o in self._orientations:
+        for o in range(0, len(self._orientations)):
 
-            roll = roll + abs(o[0])* 180 / math.pi
-            pitch = pitch + abs(o[1])* 180 / math.pi
+            roll = roll + abs(self._orientations[o][0])* 180 / math.pi
+            pitch = pitch + abs(self._orientations[o][1])* 180 / math.pi
 
         #  accumulated angles for each type of rotation
         #  divided by iterations * maximum angle * each type of rotation
@@ -185,7 +197,75 @@ class Robot(object):
 
         balance = 1 - balance # imbalance to balance
 
+        # return balance
         return balance
+
+
+    def export_positions(self, evaluation_time, robotid, generation, experiment_name):
+
+
+        it = len(self._seconds)
+
+        for o in range(0, it):
+
+            if o < it-1:
+                if self._seconds[o] != self._seconds[o+1]:
+                    self.write_pos(o, evaluation_time, robotid, generation, experiment_name)
+                else:
+                    self.accumulates_pos(o)
+            else:
+                if self._seconds[o] != self._seconds[o-1]:
+                    self.write_pos(o, evaluation_time, robotid, generation, experiment_name)
+                else:
+                    self.accumulates_pos(o)
+
+
+    def write_pos(self, o, evaluation_time, robotid, generation, experiment_name):
+
+        f = open('../../../l-system/experiments/'+ experiment_name+'/offspringpop'+generation+'/positions_'+robotid+'.txt', "a+")
+
+        if self.second<= evaluation_time:
+
+            self.avg_roll += self._orientations[o][0]
+            self.avg_pitch += self._orientations[o][1]
+            self.avg_yaw += self._orientations[o][2]
+            self.avg_x += self._positions[o].x
+            self.avg_y += self._positions[o].y
+            self.avg_z += self._positions[o].z
+
+            self.avg_roll = self.avg_roll/self.count_group
+            self.avg_pitch = self.avg_pitch/self.count_group
+            self.avg_yaw = self.avg_yaw/self.count_group
+            self.avg_x = self.avg_x/self.count_group
+            self.avg_y = self.avg_y/self.count_group
+            self.avg_z = self.avg_z/self.count_group
+
+            self.avg_roll =  abs(self.avg_roll)* 180 / math.pi
+            self.avg_pitch =  abs(self.avg_pitch)* 180 / math.pi
+            self.avg_yaw =  abs(self.avg_yaw)* 180 / math.pi
+
+            f.write(str(self.second) + ' ' + str(self.avg_roll) + ' ' + str(self.avg_pitch) + ' ' + str(self.avg_yaw) + ' ' + str(self.avg_x) + ' ' + str(self.avg_y) + ' ' + str(self.avg_z) + '\n')
+
+            self.second += 1
+            self.avg_roll = 0
+            self.avg_pitch = 0
+            self.avg_yaw = 0
+            self.avg_x = 0
+            self.avg_y = 0
+            self.avg_z = 0
+            self.count_group = 1
+
+        f.close()
+
+    def accumulates_pos(self, o):
+
+        self.avg_roll += self._orientations[o][0]
+        self.avg_pitch += self._orientations[o][1]
+        self.avg_yaw += self._orientations[o][2]
+        self.avg_x += self._positions[o].x
+        self.avg_y += self._positions[o].y
+        self.avg_z += self._positions[o].z
+        self.count_group += 1
 
 
     def displacement_velocity(self):
