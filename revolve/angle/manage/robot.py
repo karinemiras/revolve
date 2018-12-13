@@ -188,12 +188,19 @@ class Robot(object):
 
         for o in range(0, len(self._orientations)):
 
-            roll = roll + abs(self._orientations[o][0])* 180 / math.pi
-            pitch = pitch + abs(self._orientations[o][1])* 180 / math.pi
+            if self._orientations[o][0] < 0:
+                roll = roll + 360 + (self._orientations[o][0] * 180 / math.pi)
+            else:
+                roll = roll + (self._orientations[o][0] * 180 / math.pi)
+
+            if self._orientations[o][1] < 0:
+                pitch = pitch + 360 + (self._orientations[o][1] * 180 / math.pi)
+            else:
+                pitch = pitch + (self._orientations[o][1] * 180 / math.pi)
 
         #  accumulated angles for each type of rotation
         #  divided by iterations * maximum angle * each type of rotation
-        balance = (roll + pitch) / (it * 180 * 2)
+        balance = (roll + pitch) / (it * 360 * 2)
 
         balance = 1 - balance # imbalance to balance
 
@@ -240,9 +247,20 @@ class Robot(object):
             self.avg_y = self.avg_y/self.count_group
             self.avg_z = self.avg_z/self.count_group
 
-            self.avg_roll =  abs(self.avg_roll)* 180 / math.pi
-            self.avg_pitch =  abs(self.avg_pitch)* 180 / math.pi
-            self.avg_yaw =  abs(self.avg_yaw)* 180 / math.pi
+            if self.avg_roll < 0:
+                self.avg_roll =   360 + (self.avg_roll * 180 / math.pi )
+            else:
+                self.avg_roll = self.avg_roll * 180 / math.pi
+
+            if self.avg_pitch < 0:
+                self.avg_pitch =  360 + (self.avg_pitch * 180 / math.pi)
+            else:
+                self.avg_pitch = self.avg_pitch * 180 / math.pi
+
+            if self.avg_yaw < 0:
+                self.avg_yaw =    360 + (self.avg_yaw* 180 / math.pi)
+            else:
+                self.avg_yaw =    self.avg_yaw* 180 / math.pi
 
             f.write(str(self.second) + ' ' + str(self.avg_roll) + ' ' + str(self.avg_pitch) + ' ' + str(self.avg_yaw) + ' ' + str(self.avg_x) + ' ' + str(self.avg_y) + ' ' + str(self.avg_z) + '\n')
 
