@@ -241,20 +241,27 @@ class Robot(object):
             self.avg_y = self.avg_y/self.count_group
             self.avg_z = self.avg_z/self.count_group
 
-            if self.avg_roll < 0:
-                self.avg_roll =   360 + (self.avg_roll * 180 / math.pi )
-            else:
-                self.avg_roll = self.avg_roll * 180 / math.pi
 
-            if self.avg_pitch < 0:
-                self.avg_pitch =  360 + (self.avg_pitch * 180 / math.pi)
-            else:
-                self.avg_pitch = self.avg_pitch * 180 / math.pi
+            self.avg_roll =   self.avg_roll * 180 / math.pi
 
-            if self.avg_yaw < 0:
-                self.avg_yaw =    360 + (self.avg_yaw* 180 / math.pi)
-            else:
-                self.avg_yaw =    self.avg_yaw* 180 / math.pi
+            self.avg_pitch =  self.avg_pitch * 180 / math.pi
+
+            self.avg_yaw =    self.avg_yaw* 180 / math.pi
+
+            # if self.avg_roll < 0:
+            #     self.avg_roll =   360 + (self.avg_roll * 180 / math.pi )
+            # else:
+            #     self.avg_roll = self.avg_roll * 180 / math.pi
+            #
+            # if self.avg_pitch < 0:
+            #     self.avg_pitch =  360 + (self.avg_pitch * 180 / math.pi)
+            # else:
+            #     self.avg_pitch = self.avg_pitch * 180 / math.pi
+            #
+            # if self.avg_yaw < 0:
+            #     self.avg_yaw =    360 + (self.avg_yaw* 180 / math.pi)
+            # else:
+            #     self.avg_yaw =    self.avg_yaw* 180 / math.pi
 
             f.write(str(self.second) + ' ' + str(self.avg_roll) + ' ' + str(self.avg_pitch) + ' ' + str(self.avg_yaw) + ' ' + str(self.avg_x) + ' ' + str(self.avg_y) + ' ' + str(self.avg_z) + '\n')
 
