@@ -301,6 +301,22 @@ class Robot(object):
 
         return np.sqrt(dist.x**2 + dist.y**2) / float(time)
 
+    def displacement_velocity_hill(self):
+
+        dist, time = self.displacement()
+        if time.is_zero():
+            return 0.0
+
+        if dist.y == 0:
+            y = -1
+        elif dist.y <0:
+            y = dist.y / 10
+        else:
+            y = dist.y
+
+        return y / float(time)
+
+
     def age(self):
         """
         Returns this robot's age as a Time object.
