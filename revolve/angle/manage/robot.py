@@ -301,20 +301,39 @@ class Robot(object):
 
         return np.sqrt(dist.x**2 + dist.y**2) / float(time)
 
+    # this one is ehre for safety, which is implemented in the lsystem, as it contains the penalty
+    # def displacement_velocity_hill_penalty(self):
+    #
+    #     dist, time = self.displacement()
+    #     if time.is_zero():
+    #         return 0.0
+    #
+    #     if dist.y == 0:
+    #         y = -1
+    #     elif dist.y <0:
+    #         y = dist.y / 10
+    #     else:
+    #         y = dist.y
+    #
+    #     return y / float(time)
+
+
     def displacement_velocity_hill(self):
 
         dist, time = self.displacement()
         if time.is_zero():
             return 0.0
 
-        if dist.y == 0:
-            y = -1
-        elif dist.y <0:
-            y = dist.y / 10
-        else:
-            y = dist.y
+        return dist.y / float(time)
 
-        return y / float(time)
+
+    def displacement_velocity_info(self):
+
+        dist, time = self.displacement()
+        if time.is_zero():
+            return 0.0
+
+        return dist.x, dist.y, dist.z, float(time)
 
 
     def age(self):
