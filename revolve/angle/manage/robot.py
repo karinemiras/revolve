@@ -248,20 +248,6 @@ class Robot(object):
 
             self.avg_yaw =    self.avg_yaw* 180 / math.pi
 
-            # if self.avg_roll < 0:
-            #     self.avg_roll =   360 + (self.avg_roll * 180 / math.pi )
-            # else:
-            #     self.avg_roll = self.avg_roll * 180 / math.pi
-            #
-            # if self.avg_pitch < 0:
-            #     self.avg_pitch =  360 + (self.avg_pitch * 180 / math.pi)
-            # else:
-            #     self.avg_pitch = self.avg_pitch * 180 / math.pi
-            #
-            # if self.avg_yaw < 0:
-            #     self.avg_yaw =    360 + (self.avg_yaw* 180 / math.pi)
-            # else:
-            #     self.avg_yaw =    self.avg_yaw* 180 / math.pi
 
             f.write(str(self.second) + ' ' + str(self.avg_roll) + ' ' + str(self.avg_pitch) + ' ' + str(self.avg_yaw) + ' ' + str(self.avg_x) + ' ' + str(self.avg_y) + ' ' + str(self.avg_z) + '\n')
 
@@ -300,22 +286,6 @@ class Robot(object):
             return 0.0
 
         return np.sqrt(dist.x**2 + dist.y**2) / float(time)
-
-    # this one is ehre for safety, which is implemented in the lsystem, as it contains the penalty
-    # def displacement_velocity_hill_penalty(self):
-    #
-    #     dist, time = self.displacement()
-    #     if time.is_zero():
-    #         return 0.0
-    #
-    #     if dist.y == 0:
-    #         y = -1
-    #     elif dist.y <0:
-    #         y = dist.y / 10
-    #     else:
-    #         y = dist.y
-    #
-    #     return y / float(time)
 
 
     def displacement_velocity_hill(self):
